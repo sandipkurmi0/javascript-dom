@@ -2,21 +2,22 @@ import "../assets/css/style.css";
 
 // const app = document.getElementById("app");
 // app.innerHTML = `
-//   <h1>JavaScript DOM Sandip</h1>
+//   <h1>JavaScript DOM Sandip This is new work</h1>
 // `;
 
 // document.addEventListener("DOMContentLoaded", () =>
 //   alert("Dom Content Loaded")
-// );// const app = document.getElementById("app");
+// );
+// const app = document.getElementById("app");
 // app.innerHTML = `
 //   <h1>JavaScript DOM Sandip</h1>
 // `;
 
 // //Dom Nods
-
 //HTML
 // console.log(document.documentElement);
-// console.log(document);
+// console.log(document.documentElement);
+// console.log(document.head);
 
 // console.log(document.body instanceof HTMLBodyElement);
 // console.log(document.body instanceof HTMLElement);
@@ -30,7 +31,7 @@ import "../assets/css/style.css";
 // //this will give only Html tag name
 // console.log(document.body.tagName);
 // console.log(document.head.tagName);
-// console.log(document.tagName);
+// console.log(document);
 
 // const app = document.getElementById("app");
 // const div = document.createElement("div");
@@ -43,7 +44,7 @@ import "../assets/css/style.css";
 
 // console.log(app, div);
 
-//append htmle element and text
+//append Html element and text
 // const app = document.getElementById("app");
 // app.innerHTML = `
 //   <h1>JavaScript DOM Sandip</h1>
@@ -56,11 +57,15 @@ import "../assets/css/style.css";
 // h5.innerText = "hello world";
 // h5.innerText += ` it's sandip`;
 
+// const h4 = document.createElement("h4");
+// h4.innerHTML = "nice work";
+
 // app.append(h1);
 // app.append(h5);
+// app.append(h4);
 
-// //give inner Html
-// console.log(app.innerHTML);
+//give inner Html
+// console.log(app);
 
 // //git both similer result but innerText is more generic
 // console.log(app.innerText);
@@ -97,8 +102,13 @@ import "../assets/css/style.css";
 // }
 
 // const inputFromTemplet = createInputTemlet({ lable: "email", type: "email" });
+// const inputPasswordTemplet = createInputTemlet({
+//   lable: "password",
+//   type: "password",
+// });
 
 // app.innerHTML += inputFromTemplet;
+// app.innerHTML += inputPasswordTemplet;
 
 // console.log(app);
 
@@ -125,8 +135,14 @@ import "../assets/css/style.css";
 //   type: "radio",
 // });
 
+// const inputStringRadioMail = createInputStringTemplet({
+//   lable: "mail",
+//   type: "radio",
+// });
+
 // app.innerHTML += inputStringTemplet;
 // app.innerHTML += inputStringRadio;
+// app.innerHTML += inputStringRadioMail;
 
 // console.log(app);
 
@@ -239,6 +255,7 @@ import "../assets/css/style.css";
 // div.append(span);
 
 // app.append(div);
+// console.log(app);
 
 // //by default cloneNode(false)
 // const cloneNode = div.cloneNode(true);
@@ -261,10 +278,10 @@ import "../assets/css/style.css";
 
 // app.append(div);
 
-// //new way of doing
-// // setTimeout(() => div.remove(), 2500);
+//new way of doing
+// setTimeout(() => div.remove(), 2500);
 
-// //old way of doing
+//old way of doing
 // setTimeout(() => div.parentNode.removeChild(div), 2500);
 ////////////////////////////////////////////////////
 
@@ -303,6 +320,11 @@ import "../assets/css/style.css";
 // newListItem.innerText = "rakesh";
 // newListItem.className = "list-item";
 
+// const newListItem1 = document.createElement("li");
+// newListItem1.innerHTML = "vikash";
+// newListItem1.className = "list-item1";
+
+// userLi.append(newListItem1);
 // userLi.append(newListItem);
 
 // //new Ul Tag
@@ -311,7 +333,8 @@ import "../assets/css/style.css";
 // anotherItem.className = "my-list";
 // userLi.append(anotherItem);
 
-// setTimeout(() => anotherItem.remove(), 2500);
+// setTimeout(() => anotherItem.remove(), 4000);
+// setTimeout(() => newListItem1.remove(), 3000);
 // setTimeout(() => newListItem.parentNode.removeChild(newListItem), 2000);
 
 //////////////////////////////////////////////////////////////
@@ -338,6 +361,7 @@ import "../assets/css/style.css";
 
 // ListItemFromQuery.append(fragement);
 
+// console.log(app);
 // const myNewListItem = document.createElement("li");
 // myNewListItem.innerText = "Harday sindhu";
 // myNewListItem.className = "list-item";
@@ -400,15 +424,15 @@ import "../assets/css/style.css";
 // const selectedItem = 2;
 // console.log(list[selectedItem], list.length);
 
-// //more genricway of doing
+//more genricway of doing
 // console.log(queryList.children[selectedItem], queryList.children.length);
 
-// //this is not aproprite way
+//this is not aproprite way
 // console.log(queryList.childNodes[selectedItem], queryList.childNodes.length);
 
 ///////////////////////////////////////////////////////////////////////////
 
-//Perent node
+// Perent node
 // const app = document.getElementById("app");
 // app.innerHTML = `
 // <h1>Parent Node</h1>
@@ -420,10 +444,10 @@ import "../assets/css/style.css";
 // console.log(fristItem);
 // console.log(fristItem.parentNode);
 
-//This is more generic way of doing in prentElement we can go up by chaining
+// This is more generic way of doing in prentElement we can go up by chaining
 // console.log(fristItem.parentElement.parentElement);
 
-//this is also sorter form
+// this is also sorter form
 // console.log(fristItem.closest("#app"));
 // console.log(fristItem.closest("body"));
 
@@ -448,11 +472,11 @@ import "../assets/css/style.css";
 // console.log(userList.nextElementSibling);
 // console.log(userList.previousElementSibling);
 
-// //give any dom node like #text
+//give any dom node like #text
 // console.log(list.nextSibling);
 // console.log(list.previousSibling);
 
-// //give any dom element
+//give any dom element
 // console.log(list.nextElementSibling);
 // console.log(list.previousElementSibling);
 
@@ -472,7 +496,7 @@ import "../assets/css/style.css";
 // input.draggable = true;
 // input.innerText = "hello";
 // input.required = true;
-// input.size = 1;
+// input.size = 2;
 // console.log(input);
 // console.dir(input);
 // console.log(app);
@@ -499,3 +523,148 @@ import "../assets/css/style.css";
 // console.log(button.attributes["aria-label"]);
 
 // console.dir(button);
+
+// // Style Component
+// button.style.cssText = "padding : 25px; margin: 10px 0; font-size: 20px;";
+
+// button.style.fontSize = "22px";
+// console.dir(button.style);
+// console.log(button.style.fontSize);
+
+//////////////////////////////////////////
+// buttons ClassName
+
+// const app = document.getElementById("app");
+// app.innerHTML = `
+// <h1>Siblings</h1>
+// <button type='button' class="one two">Click Me</button>
+// `;
+
+// // old way of doing
+// const button = document.querySelector("button");
+// button.className += " three";
+
+// // old way of doing
+// console.log(button.className.split(" "));
+// console.log(button.className);
+// button.classList.add("four");
+
+// // button.classList.remove("one");
+
+// setTimeout(() => button.classList.toggle("five"), 2500);
+// console.log(button.className);
+
+// button.classList.replace("one", "six");
+///////////////////////////////////////////////////////////////////////
+// const app = document.getElementById("app");
+// app.innerHTML = `
+// <h1>Button</h1>
+// <button type>Click Me</button>
+// `;
+
+// const button = document.querySelector("button");
+// console.log(button);
+
+// //old way of doing
+// button.onclick = function () {
+//   console.log(1);
+// };
+
+// function handleClick(event) {
+//   console.log(event.target);
+// }
+
+// button.addEventListener("click", handleClick);
+
+// button.addEventListener("dblclick", function (event) {
+//   console.log(event, "doubleClicks");
+// });
+
+/////////////////////////////////////////////////////////////////////////
+//clear/remove button event
+
+// const app = document.getElementById("app");
+// app.innerHTML = `
+// <h1>remove Button Event</h1>
+// <button type=button>Click me</button>
+// `;
+
+// const button = document.querySelector("button");
+
+// achive by recurson
+// function handleClick() {
+//   console.log("click");
+//   button.removeEventListener("click", handleClick);
+// }
+
+// button.addEventListener("click", handleClick);
+
+// work after 5 second
+// setTimeout(() => {
+//   button.removeEventListener("click", handleClick);
+// }, 5000);
+
+// button.addEventListener(
+//   "dblclick",
+//   function () {
+//     console.log("dblclick");
+//   },
+//   { once: true }
+// );
+
+////////////////////////////////////////////////////////////////////////
+//event bubling
+// const app = document.getElementById("app");
+// app.innerHTML = `
+// <h1>Event bubling</h1>
+// <div class="one">
+// <div class="two">
+// <button type='button' class='three'>Click me</button>
+// </div>
+// </div>
+// `;
+
+// const one = document.querySelector(".one");
+// const two = document.querySelector(".two");
+// const three = document.querySelector(".three");
+
+// function handleClick(event) {
+//   //   event.stopPropagation();
+//   //   event.stopImmediatePropagation();
+//   console.log(event.target);
+// }
+
+// one.addEventListener("click", handleClick);
+// two.addEventListener("click", handleClick);
+// three.addEventListener("click", handleClick);
+
+// three.addEventListener("click", (event) => console.log(event));
+
+//////////////////////////////////////////////////////////////////////////////////
+//prevent default event action
+const app = document.getElementById("app");
+app.innerHTML = `
+<h1>Prevent default</h1>
+<form action="">
+<label>User Email
+<input type="email" />
+</label>
+<label>i agree to the turm 
+<input type="checkbox" />
+</label>
+</form>
+`;
+
+const form = document.querySelector("form");
+const email = document.querySelector('input[type="email"]');
+const checkbox = document.querySelector('input[type="checkbox"');
+
+console.log(form);
+console.log(email);
+console.log(checkbox);
+
+function handleSubmit(event) {
+  console.log(event);
+}
+
+form.addEventListener("submit", handleSubmit);
